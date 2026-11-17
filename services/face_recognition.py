@@ -23,7 +23,7 @@ def recognize_and_mark_attendance(image):
 
     employees = get_all_employee_embeddings()
 
-    threshold = 0.5  # adjust based on your tests
+    threshold = 0.8 
 
     for employee_id, name, stored_embedding in employees:
         similarity = cosine_similarity(current_face_embedding, stored_embedding)

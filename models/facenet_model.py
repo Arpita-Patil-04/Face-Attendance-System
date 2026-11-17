@@ -4,12 +4,6 @@ import numpy as np
 import cv2
 
 embedder = FaceNet()
-
-print("Input shape:", embedder.model.input_shape)
-print("Output shape:", embedder.model.output_shape)
-
-embedder.model.summary()
-
 detector = MTCNN()
 
 # Function to get face embeddings from an image
